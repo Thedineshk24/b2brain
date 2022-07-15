@@ -1,0 +1,25 @@
+.card {
+
+    .similar__accounts {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        display: flex;
+        justify-self: start;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        color: #FF6059;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
