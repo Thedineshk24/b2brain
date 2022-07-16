@@ -16,6 +16,7 @@ const SearchBox = () => {
     }, [data]);
 
     const handleSearch = (e) => {
+        e.preventDefault();
         setOptions(e.target.value);
     }
 

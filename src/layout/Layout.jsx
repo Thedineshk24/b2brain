@@ -20,9 +20,8 @@ const LayoutB2Brain = () => {
                 </div>
                 <Menu className='menu' theme="light" defaultSelectedKeys={['1']} mode="inline" items={items} />
             </Sider>
-            <Layout className="site-layout">
+            <Layout>
                 <Header
-                    className="site-layout-background"
                     style={{
                         padding: 0,
                         background: '#FFFFFF',
@@ -31,7 +30,7 @@ const LayoutB2Brain = () => {
                     <SearchBox />
                 </Header>
                 {/* ALL OTHER COMPONENTS OF ANY CONTENT GOES HERE */}
-                <Home />
+                    <Home />
                 <Footer
                     style={{
                         textAlign: 'center',
