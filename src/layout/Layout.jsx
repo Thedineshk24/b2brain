@@ -1,14 +1,10 @@
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { Layout, Menu } from 'antd';
 import React, { useState } from 'react';
 import { items } from '../utils/sidebarUtils';
-import '../styles/layout.scss';
-import Hero from '../Assests/hero-image.svg';
-import Companies from '../Assests/companies.svg';
-import reviews from '../Assests/reviews.svg';
-import SearchBox, { dataValues } from '../components/Search';
-import Card from '../components/Card';
+import SearchBox from '../components/Search';
+import Home from '../components/Home';
 
-const { Header, Content, Footer, Sider } = Layout;
+const { Header, Footer, Sider } = Layout;
 
 const LayoutB2Brain = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -16,7 +12,6 @@ const LayoutB2Brain = () => {
         <Layout
             style={{
                 minHeight: '100vh',
-
             }}
         >
             <Sider theme="light" collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
@@ -35,28 +30,8 @@ const LayoutB2Brain = () => {
                 >
                     <SearchBox />
                 </Header>
-                <Content
-                    style={{
-                        margin: '0 16px',
-                    }}
-                >
-                    <Card />
-                    <div
-                        className="site__layout__background"
-                    >
-                        <img src={Hero} alt="hero-image" />
-                    </div>
-                    <div
-                        className="site__layout__background"
-                    >
-                        <img src={Companies} alt="featured companies" />
-                    </div>
-                    <div
-                        className="site__layout__background"
-                    >
-                        <img src={reviews} alt="reviews" />
-                    </div>
-                </Content>
+                {/* ALL OTHER COMPONENTS OF ANY CONTENT GOES HERE */}
+                <Home />
                 <Footer
                     style={{
                         textAlign: 'center',
